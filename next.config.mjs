@@ -1,11 +1,11 @@
-/** @type {import('next').NextConfig} */
-const repoName = "RentIt";
+import { basePath } from "./lib/repoConfig.mjs";
 
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
   images: { unoptimized: true },
-  basePath: `/${repoName}`,
-  assetPrefix: `/${repoName}/`,
+  basePath,
+  assetPrefix: `${basePath}/`,
   trailingSlash: true,
 };
 

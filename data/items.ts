@@ -31,6 +31,7 @@ export const items: Item[] = [
     priceUnit: "per event",
     description:
       "A carved wooden hanging swing, a centerpiece for haldi ceremonies, mehndi functions, and traditional photo setups.",
+    image: "/images/props-indian-furniture/wooden-jhula-swing.jpg",
     featured: true,
   },
   {
@@ -41,6 +42,7 @@ export const items: Item[] = [
     price: 150,
     priceUnit: "per event",
     description: "A matched pair of ornately carved wooden chairs for the couple's seating on stage.",
+    image: "/images/props-indian-furniture/bride-groom-sweetheart-chairs.jpg",
     featured: true,
   },
   {
@@ -51,6 +53,7 @@ export const items: Item[] = [
     price: 35,
     priceUnit: "per event",
     description: "A large brass urli filled with floating flowers and candles, used as an entrance or table centerpiece.",
+    image: "/images/props-indian-furniture/brass-urli-flower-bowl.jpg",
   },
   {
     slug: "mandap-pillar-set",
@@ -61,6 +64,7 @@ export const items: Item[] = [
     priceUnit: "per event",
     description:
       "Four decorated pillars with floral drapery forming a wedding mandap, the traditional canopy for the marriage ceremony.",
+    image: "/images/props-indian-furniture/mandap-pillar-set.jpg",
     featured: true,
   },
   {
@@ -71,6 +75,7 @@ export const items: Item[] = [
     price: 45,
     priceUnit: "per event",
     description: "A pair of low, hand-painted wooden stools traditionally used for pooja or ceremonial seating.",
+    image: "/images/props-indian-furniture/decorative-peetha-pair.jpg",
   },
   {
     slug: "antique-style-trunk-prop",
@@ -80,6 +85,7 @@ export const items: Item[] = [
     price: 40,
     priceUnit: "per event",
     description: "A vintage-look wooden trunk used as a decorative accent or photo prop.",
+    image: "/images/props-indian-furniture/antique-style-trunk-prop.jpg",
   },
   {
     slug: "dhoti-function-stage-setup",
@@ -90,6 +96,7 @@ export const items: Item[] = [
     priceUnit: "per event",
     description:
       "A traditional backdrop and seating arrangement for a boy's dhoti (upanayanam-style) coming-of-age ceremony.",
+    image: "/images/props-indian-furniture/dhoti-function-stage-setup.jpg",
   },
   {
     slug: "girls-maturity-function-decor",
@@ -100,6 +107,7 @@ export const items: Item[] = [
     priceUnit: "per event",
     description:
       "A traditional backdrop with floral and seating decor for a girl's coming-of-age ceremony.",
+    image: "/images/props-indian-furniture/girls-maturity-function-decor.jpg",
     featured: true,
   },
   {
@@ -110,6 +118,7 @@ export const items: Item[] = [
     price: 90,
     priceUnit: "per event",
     description: "Decorated thalis, flower baskets, and small stools for a haldi (turmeric) ceremony setup.",
+    image: "/images/props-indian-furniture/haldi-ceremony-prop-set.jpg",
   },
 
   // ---- Tents & Canopies ----

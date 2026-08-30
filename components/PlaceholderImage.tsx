@@ -1,5 +1,6 @@
 import { CategorySlug } from "@/data/categories";
 import { categoryStyles } from "@/lib/categoryStyles";
+import { basePath } from "@/lib/repoConfig.mjs";
 
 interface PlaceholderImageProps {
   src?: string;
@@ -19,8 +20,11 @@ export default function PlaceholderImage({
   className = "",
 }: PlaceholderImageProps) {
   if (src) {
+    // basePath ("/RentIt" on GitHub Pages) is only auto-applied by next/link
+    // and next/image — a plain <img src> needs it prefixed by hand or the
+    // image 404s once deployed under a subpath.
     // eslint-disable-next-line @next/next/no-img-element -- static export has no image server to optimize against
-    return <img src={src} alt={alt} className={`object-cover ${className}`} />;
+    return <img src={`${basePath}${src}`} alt={alt} className={`object-cover ${className}`} />;
   }
 
   const style = categoryStyles[category];
