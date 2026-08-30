@@ -5,6 +5,8 @@ furniture/ceremony decor, and general party rentals, add items to a list,
 and submit one request to get a quote. Built with Next.js, TypeScript, and
 Tailwind CSS, deployed for free on GitHub Pages.
 
+**Live site:** https://sandeepb614.github.io/RentIt/
+
 **New to this project or to GitHub? Read [`GUIDE.md`](./GUIDE.md)** — a
 beginner-friendly, chapter-by-chapter walkthrough of everything in this
 repo, including how GitHub itself works.
