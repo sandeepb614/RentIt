@@ -187,9 +187,9 @@ turns a form submission into an email.
    `https://formspree.io/f/abcd1234`.
 3. Set that URL as the `NEXT_PUBLIC_FORMSPREE_ENDPOINT` value — locally in
    a `.env.local` file (copy `.env.local.example` and fill it in), or in
-   production as a **repository variable** in GitHub (Settings → Secrets
-   and variables → Actions → Variables), which is what the deployment
-   workflow in Chapter 7 reads.
+   production as an **environment variable** in your Vercel project
+   settings (Project → Settings → Environment Variables), which Chapter 7
+   covers.
 
 **What happens before you do that?** The form still works end-to-end for
 visitors — but instead of emailing you, it logs the submission to the
@@ -204,40 +204,46 @@ what would have been emailed once Formspree is connected.
 
 ---
 
-## Chapter 7: Deploying to GitHub Pages
+## Chapter 7: Deploying to Vercel
 
-**GitHub Pages** is a free static website host built into every GitHub
-repository. Because this site has no database and no server-side code
-(the inquiry form talks directly to Formspree from the browser), the whole
-thing can be exported to plain HTML/CSS/JS files and hosted for free.
+**Vercel** is a hosting company built by the same people who make Next.js,
+and its free ("Hobby") tier is a natural fit here: it builds and hosts a
+Next.js app for free, and — unlike GitHub Pages — it can deploy from a
+**private** repository without requiring you to make your code public.
+That's why this project uses Vercel: the `RentIt` repo stays private.
 
-Two pieces make this automatic:
+**One-time setup (only you can do this — it needs your own account):**
+1. Go to [vercel.com](https://vercel.com) and sign up free (you can sign
+   in directly with your GitHub account).
+2. Click "Add New… → Project," then "Import" `sandeepb614/RentIt`.
+3. When asked which branch to deploy, choose
+   `claude/party-rental-website-n8ah6w` (or `main`, once this branch is
+   merged into it).
+4. Before the first deploy, add the environment variable
+   `NEXT_PUBLIC_FORMSPREE_ENDPOINT` under Project → Settings →
+   Environment Variables (Chapter 6 explains what value to put there).
+5. Click Deploy. Vercel builds the project and gives you a live URL that
+   looks like `https://rent-it-xxxx.vercel.app`.
 
-1. **`next.config.mjs`** sets `output: "export"`, which tells Next.js to
-   produce a folder of static files (`out/`) instead of needing a live
-   Node.js server. It also sets `basePath: "/RentIt"` so every internal
-   link matches the URL GitHub Pages will actually use:
-   `https://sandeepb614.github.io/RentIt/`.
-2. **`.github/workflows/deploy.yml`** is a **GitHub Actions workflow** —
-   a script GitHub runs automatically. This one triggers on every push to
-   the project's branch, installs dependencies, runs `npm run build`, and
-   publishes the resulting `out/` folder to GitHub Pages. This is a small
-   taste of **CI/CD** (Continuous Integration / Continuous Deployment):
-   instead of manually uploading files to a web host, pushing a commit is
-   the deploy step.
+**This is CI/CD too** (Continuous Integration / Continuous Deployment) —
+once the project is connected, Vercel watches the repo automatically:
+every push to the connected branch triggers a new build and deploy with no
+extra steps. Pushes to *other* branches (or a pull request) even get their
+own temporary "preview" URL, so you can see a change live before it goes
+to the main site.
 
-**To check on a deployment:** go to the repo on GitHub, click the
-"Actions" tab, and you'll see a run for every push — green check mark
-means it deployed successfully; you can click into a run to see the exact
-build output if something fails.
+**To check on a deployment:** open your project's dashboard on
+vercel.com — every push shows up as a "Deployment" with a build log; a
+checkmark means it went live, an X means the build failed (click in to
+see exactly why).
 
 **To update the live site after making an edit:** commit your change and
-push it (Chapter 1's vocabulary) — the workflow re-runs automatically
-within a minute or two, and the live site updates itself.
+push it (Chapter 1's vocabulary) — Vercel picks it up automatically within
+about a minute, no separate deploy step needed.
 
 **Try it yourself:** After your first deploy, edit an item's price in
-`data/items.ts`, commit, and push. Watch the "Actions" tab turn from a
-yellow dot (running) to a green check (done), then refresh the live site.
+`data/items.ts`, commit, and push. Watch your Vercel dashboard show a new
+deployment start and finish, then refresh the live site.
 
 ---
 

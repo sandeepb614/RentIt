@@ -3,7 +3,7 @@
 A simple, no-checkout rental catalog site: browse props, Indian
 furniture/ceremony decor, and general party rentals, add items to a list,
 and submit one request to get a quote. Built with Next.js, TypeScript, and
-Tailwind CSS, deployed for free on GitHub Pages.
+Tailwind CSS, deployed for free on Vercel (keeps this repo private).
 
 **New to this project or to GitHub? Read [`GUIDE.md`](./GUIDE.md)** — a
 beginner-friendly, chapter-by-chapter walkthrough of everything in this
@@ -34,11 +34,12 @@ broken image.
 
 See Chapter 6 of `GUIDE.md` — in short, create a free form at
 [formspree.io](https://formspree.io) and set `NEXT_PUBLIC_FORMSPREE_ENDPOINT`
-(locally in `.env.local`, and in production as a GitHub Actions repository
-variable).
+(locally in `.env.local`, and in production as a Vercel project
+environment variable).
 
 ## Deployment
 
-Pushing to this repo's branch automatically rebuilds and redeploys the
-site via the GitHub Actions workflow in `.github/workflows/deploy.yml`.
-See Chapter 7 of `GUIDE.md`.
+Hosted on [Vercel](https://vercel.com), connected to this GitHub repo.
+Once connected, every push to the deployed branch automatically triggers
+a new build and deploy — no manual upload step. See Chapter 7 of
+`GUIDE.md` for the one-time setup.
