@@ -100,13 +100,13 @@ export const items: Item[] = [
   },
   {
     slug: "girls-maturity-function-decor",
-    name: "Girl's Maturity Function Decor Package",
+    name: "Half Saree Function Decor Package",
     category: "props-indian-furniture",
     subcategory: "Ceremony Setups",
     price: 400,
     priceUnit: "per event",
     description:
-      "A traditional backdrop with floral and seating decor for a girl's coming-of-age ceremony.",
+      "A traditional backdrop with floral and seating decor for a half saree (coming-of-age) function.",
     image: "/images/props-indian-furniture/girls-maturity-function-decor.jpg",
     featured: true,
   },
