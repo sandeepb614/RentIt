@@ -129,6 +129,7 @@ export const items: Item[] = [
     price: 75,
     priceUnit: "per day",
     description: "A compact pop-up tent, ideal for small backyard gatherings.",
+    image: "/images/tents-canopies/10x10-pop-up-canopy.jpg",
   },
   {
     slug: "20x20-frame-tent",
@@ -137,6 +138,7 @@ export const items: Item[] = [
     price: 250,
     priceUnit: "per day",
     description: "A mid-size open-sided frame tent, seats roughly 40 guests.",
+    image: "/images/tents-canopies/20x20-frame-tent.jpg",
     featured: true,
   },
   {
@@ -146,6 +148,7 @@ export const items: Item[] = [
     price: 650,
     priceUnit: "per day",
     description: "A large event tent suited for weddings and big parties.",
+    image: "/images/tents-canopies/40x60-pole-tent.jpg",
   },
 
   // ---- Tables & Chairs ----
@@ -156,6 +159,7 @@ export const items: Item[] = [
     price: 12,
     priceUnit: "each",
     description: "Standard round banquet table, seats up to 8 guests.",
+    image: "/images/tables-chairs/60in-round-table.jpg",
   },
   {
     slug: "8ft-banquet-table",
@@ -164,6 +168,7 @@ export const items: Item[] = [
     price: 10,
     priceUnit: "each",
     description: "Rectangular folding table, seats up to 8 guests.",
+    image: "/images/tables-chairs/8ft-banquet-table.jpg",
   },
   {
     slug: "white-folding-chair",
@@ -172,6 +177,7 @@ export const items: Item[] = [
     price: 2,
     priceUnit: "each",
     description: "Sturdy white resin folding chair.",
+    image: "/images/tables-chairs/white-folding-chair.jpg",
   },
   {
     slug: "gold-chiavari-chair",
@@ -180,6 +186,7 @@ export const items: Item[] = [
     price: 6.5,
     priceUnit: "each",
     description: "Elegant gold chiavari chair for weddings and formal events.",
+    image: "/images/tables-chairs/gold-chiavari-chair.jpg",
     featured: true,
   },
 
@@ -191,6 +198,7 @@ export const items: Item[] = [
     price: 8,
     priceUnit: "each",
     description: "Floor-length white tablecloth for round tables.",
+    image: "/images/linens-decor/white-tablecloth-120.jpg",
   },
   {
     slug: "satin-table-runner",
@@ -199,6 +207,7 @@ export const items: Item[] = [
     price: 4,
     priceUnit: "each",
     description: "Satin table runner available in multiple colors.",
+    image: "/images/linens-decor/satin-table-runner.jpg",
   },
   {
     slug: "cafe-string-lights-48ft",
@@ -207,6 +216,7 @@ export const items: Item[] = [
     price: 25,
     priceUnit: "each",
     description: "Warm café-bulb string lights, 48 feet, great for tent or patio lighting.",
+    image: "/images/linens-decor/cafe-string-lights-48ft.jpg",
   },
   {
     slug: "balloon-arch-kit",
@@ -215,6 +225,7 @@ export const items: Item[] = [
     price: 120,
     priceUnit: "per event",
     description: "A full balloon arch, assembled on site in your chosen colors.",
+    image: "/images/linens-decor/balloon-arch-kit.jpg",
   },
 
   // ---- Bounce Houses & Games ----
@@ -225,6 +236,7 @@ export const items: Item[] = [
     price: 150,
     priceUnit: "per day",
     description: "Classic inflatable bounce house for backyard parties.",
+    image: "/images/bounce-houses-games/standard-bounce-house.jpg",
     featured: true,
   },
   {
@@ -234,6 +246,7 @@ export const items: Item[] = [
     price: 275,
     priceUnit: "per day",
     description: "Combination inflatable bounce house and water slide.",
+    image: "/images/bounce-houses-games/bounce-house-water-slide-combo.jpg",
   },
   {
     slug: "giant-jenga",
@@ -242,6 +255,7 @@ export const items: Item[] = [
     price: 35,
     priceUnit: "per day",
     description: "Life-size stacking block game for the lawn or patio.",
+    image: "/images/bounce-houses-games/giant-jenga.jpg",
   },
   {
     slug: "cornhole-board-set",
@@ -250,6 +264,7 @@ export const items: Item[] = [
     price: 30,
     priceUnit: "per day",
     description: "A pair of regulation cornhole boards with bags.",
+    image: "/images/bounce-houses-games/cornhole-board-set.jpg",
   },
 ];
 
